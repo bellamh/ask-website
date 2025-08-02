@@ -12,10 +12,10 @@ const Sisterhood = () => {
         <div className={styles.content}>
           <div className={styles.textContainer}>
             <p className={styles.description}>
-              At Alpha Sigma Kappa – Women in Technical Studies, sisterhood is
+              At Alpha Sigma Kappa Women in Technical Studies, sisterhood is
               at the heart of everything we do. As a small, close-knit chapter,
               we pride ourselves on truly knowing one another and creating
-              meaningful, lasting connections. Whether it's a shared class, a
+              meaningful, lasting connections. Whether it&apos;s a shared class, a
               group project, or a personal milestone, our members are there to
               celebrate, support, and uplift each other. We believe that this
               genuine closeness is what transforms us from classmates into

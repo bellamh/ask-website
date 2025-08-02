@@ -1,6 +1,8 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import "./header.css";
 
 export default function Header() {
@@ -18,32 +20,34 @@ export default function Header() {
   return (
     <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="container">
-        {/* Logo */}
         <div className="logo">
-          <a href="/" aria-label="Go to homepage">
-            <img src="/asklogo.png" alt="Alpha Sigma Kappa Logo" />
-          </a>
+          <Link href="/" aria-label="Go to homepage">
+            <Image
+              src="/asklogo.png"
+              alt="Alpha Sigma Kappa Logo"
+              width={80}
+              height={80}
+            />
+          </Link>
         </div>
 
-        {/* Navigation */}
         <nav className="navbar">
           <ul className="nav-list">
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="/involvement">Involvement</a>
+              <Link href="/involvement">Involvement</Link>
             </li>
             <li>
-              <a href="/recruitment">Recruitment</a>
+              <Link href="/recruitment">Recruitment</Link>
             </li>
           </ul>
         </nav>
 
-        {/* CTA Button */}
         <button
           className="join-ask-btn"
           onClick={() =>

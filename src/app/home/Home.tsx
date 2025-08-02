@@ -1,20 +1,9 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./home.module.css";
 
 export default function Home() {
-  const [headerVisible, setHeaderVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHeaderVisible(window.scrollY === 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className={styles.home}>
       <div className={styles.homeContent}>
@@ -27,6 +16,7 @@ export default function Home() {
         <a href="/about">
           <button className={styles.ctaButton}>Learn More</button>
         </a>
+        <div className={styles.scrollDown}>&#x25BC;</div>
       </div>
     </div>
   );

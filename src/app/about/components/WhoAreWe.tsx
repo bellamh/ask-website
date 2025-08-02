@@ -1,10 +1,19 @@
+'use client';
+
+import Image from 'next/image';
 import styles from "../about.module.css";
 
 const WhoAreWe = () => {
   return (
     <>
       <section className={styles.whoAreWe}>
-        <img src="lion.png" alt="logo" className={styles.subtitleLogo} />
+        <Image
+          src="/lion.png"
+          alt="logo"
+          width={70}
+          height={70}
+          className={styles.subtitleLogo}
+        />
         <h2 className={styles.sectionTitle}>Who Are We</h2>
       </section>
 
@@ -37,18 +46,20 @@ const WhoAreWe = () => {
               relationships formed within the sorority. We are proud to shape
               not only women who excel in science and engineering, but also
               compassionate leaders and changemakers who support one another
-              throughout life’s journey.{" "}
+              throughout life&apos;s journey.
             </p>
           </div>
           <div className={styles.photoContainer}>
-            <img
+            <Image
               className={styles.historicalPhoto}
-              src="founders.jpg"
+              src="/founders.jpg"
               alt="A Historical Photo 1"
+              width={500}
+              height={300}
             />
             <p className={styles.photoDescription}>
-              This historical photo captures ASK's early years, showcasing its
-              pioneering members and the organization's dedication to women in
+              This historical photo captures ASK&apos;s early years, showcasing its
+              pioneering members and the organization&apos;s dedication to women in
               STEM.
             </p>
           </div>

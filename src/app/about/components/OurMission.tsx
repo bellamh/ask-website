@@ -1,10 +1,19 @@
+'use client';
+
+import Image from 'next/image';
 import styles from "../about.module.css";
 
 const OurMission = () => {
   return (
     <>
       <section className={styles.ourMission}>
-        <img src=" lion.png" alt="logo" className={styles.subtitleLogo} />
+        <Image
+          src="/lion.png"
+          alt="logo"
+          width={70}
+          height={70}
+          className={styles.subtitleLogo}
+        />
         <h2 className={styles.sectionTitle}>Our Mission</h2>
       </section>
 
@@ -12,8 +21,7 @@ const OurMission = () => {
         <div className={styles.content}>
           <div className={styles.textContainer}>
             <p className={styles.description}>
-              The traditions and symbols of Alpha Sigma Kappa – Women in
-              Technical Studies reflect the strength, unity, and pride that
+              The traditions and symbols of Alpha Sigma Kappa – Women in Technical Studies reflect the strength, unity, and pride that
               define our sisterhood. From our founding to the present, these
               elements serve as lasting reminders of who we are and the values
               we carry. The white rose, our official flower, represents purity
@@ -44,10 +52,12 @@ const OurMission = () => {
             </p>
           </div>
           <div className={styles.photoContainer}>
-            <img
+            <Image
               className={styles.biglittlePhoto}
-              src="identity.jpeg"
+              src="/identity.jpeg"
               alt="ASK Big/Little event"
+              width={500}
+              height={300}
             />
             <p className={styles.photoDescription}>
               Members of ASK celebrating sisterhood at the 2024 Big/Little

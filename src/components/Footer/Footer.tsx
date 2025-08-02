@@ -1,12 +1,13 @@
-"use client";
+'use client';
+
 import React from "react";
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+} from "react-icons/fa"; // Removed FaYoutube (was unused)
+import Image from "next/image"; // Replacing <img> with <Image />
 import "./footer.css";
 
 const Footer = () => {
@@ -14,7 +15,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <img src="/asklogo.png" alt="SWE Logo" className="footer-logo" />
+          <Image
+            src="/asklogo.png"
+            alt="ASK Logo"
+            width={100}
+            height={100}
+            className="footer-logo"
+          />
         </div>
 
         <div className="footer-section">
@@ -26,7 +33,9 @@ const Footer = () => {
           <h4>AΣK National</h4>
           <ul>
             <li>
-              <a href="https://ask-wits.com/about/">Visit Website</a>
+              <a href="https://ask-wits.com/about/" target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
             </li>
           </ul>
         </div>
@@ -46,6 +55,8 @@ const Footer = () => {
               href="https://www.facebook.com/ASKWiTS"
               aria-label="Facebook"
               className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaFacebookF size={25} />
             </a>
@@ -53,6 +64,8 @@ const Footer = () => {
               href="https://x.com/alphasigmakappa"
               aria-label="Twitter"
               className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaTwitter size={25} />
             </a>
@@ -60,6 +73,8 @@ const Footer = () => {
               href="https://www.linkedin.com/company/alpha-sigma-kappa---women-in-technical-studies/"
               aria-label="LinkedIn"
               className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedinIn size={25} />
             </a>
@@ -67,6 +82,8 @@ const Footer = () => {
               href="https://www.instagram.com/usfask/?hl=en"
               aria-label="Instagram"
               className="social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram size={25} />
             </a>

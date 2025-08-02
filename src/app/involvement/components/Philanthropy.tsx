@@ -26,7 +26,7 @@ const Philanthropy = () => {
           </div>
           <div className={styles.textContainer}>
             <p className={styles.description}>
-              Philanthropy plays a vital role in our chapter’s mission to serve
+              Philanthropy plays a vital role in our chapter&apos;s mission to serve
               and uplift the broader community. Our national philanthropy is
               DonorsChoose, an organization dedicated to supporting public
               school teachers and classroom needs. Throughout the year, we host
@@ -39,7 +39,7 @@ const Philanthropy = () => {
               Beyond our national cause, we also engage in local service
               opportunities such as volunteering with Feed My Starving Children,
               and we actively support the philanthropic efforts of other Greek
-              organizations at USF. Whether we’re packing meals, fundraising for
+              organizations at USF. Whether we&apos;re packing meals, fundraising for
               educational equity, or cheering on fellow chapters at their
               events, our members are committed to giving back and making a
               difference through collective action and compassion.
