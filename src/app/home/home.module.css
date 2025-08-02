@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #000;
+  background-image: url("/askbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  transition: margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.homeContent {
+  max-width: 800px;
+  padding-top: 200px;
+}
+
+.homeContent h1,
+.homeContent h5 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+.homeContent h1 {
+  animation-delay: 0.5s;
+  margin-bottom: 10px;
+  font-size: 5rem;
+}
+
+.homeContent h5 {
+  animation-delay: 1s;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ctaButton {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1.5s;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.ctaButton:hover {
+  background-color: silver;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .homeContent {
+    padding-top: 120px;
+  }
+
+  .homeContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeContent h5 {
+    font-size: 1.2rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeContent {
+    padding-top: 80px;
+  }
+
+  .homeContent h1 {
+    font-size: 2rem;
+  }
+
+  .homeContent h5 {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
