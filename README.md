@@ -24,21 +24,6 @@ Deployed via [Vercel](https://vercel.com/)
 - **Styling:** CSS Modules + Google Fonts
 - **Deployment:** [Vercel](https://vercel.com/)
 
-## 📁 Folder Structure (Simplified)
-
-src/
-├── app/
-│ ├── page.tsx # Root landing page
-│ ├── about/
-│ │ └── page.tsx # About section
-│ ├── recruitment/
-│ │ └── page.tsx # Recruitment section
-│ ├── involvement/
-│ │ └── page.tsx # Involvement section
-├── components/ # Reusable UI components
-├── public/ # Static assets (images, icons, etc.)
-└── styles/ # Global and modular CSS files
-
 ## 🚀 Getting Started
 
 To run this project locally on your machine:
@@ -49,8 +34,10 @@ cd askwebsite
 npm install
 npm run dev
 Then open http://localhost:3000 in your browser.
+```
 
-📬 Contact
+## 📬 Contact
+
 If you’d like to connect, have questions, or want to collaborate:
 
 📧 Email: isabelladmheiden@gmail.com
@@ -59,11 +46,11 @@ If you’d like to connect, have questions, or want to collaborate:
 
 🌐 Portfolio: https://isabella-portfolio.vercel.app/
 
-🙋‍♀️ Contributions
+## 🙋‍♀️ Contributions
+
 This project is not affiliated with Alpha Sigma Kappa or the USF chapter in any official capacity.
 It was created independently as a practice and portfolio project.
 
 Please do not open pull requests to their organization — this is a standalone personal build.
 
 Made by Isabella De Meireles Heiden
-```
